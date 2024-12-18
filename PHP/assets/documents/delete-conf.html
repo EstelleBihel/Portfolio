@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete-conf</title>
+    <style>
+<style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #itemToDelete {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: pink;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #a866ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(249, 71, 249);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Suppression d'un élément</h1>
+        <button id="deleteButton">Clic pour supprimer l'élément</button>
+
+        <div id="itemToDelete">Ceci est l'élément que vous pouvez supprimer.</div>
+    </div>
+
+    <script>
+     
+        const deleteButton = document.getElementById('deleteButton');
+        const itemToDelete = document.getElementById('itemToDelete');
+
+        deleteButton.addEventListener('click', function() {
+         
+            const confirmDelete = confirm("Voulez-vous vraiment supprimer cet élément ?");
+
+          
+            if (confirmDelete) {
+                itemToDelete.remove(); 
+            }
+        });
+    </script>
+
+</body>
+</html>

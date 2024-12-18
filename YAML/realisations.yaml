@@ -1,0 +1,10 @@
+- titre: "Javascript"
+  description: "Exercice d'apprentissage des bases Javascript "
+  illustration: "/Portfolio/PHP/assets/images/realisation1.png"
+  documents:
+    - "/Portfolio/PHP/assets/documents/delete-conf.html"
+- titre: "PHP"
+  description: "Exercice d'apprentissage des bases PHP : créer un formulaire permettant de saisir le message, la taille et la couleur"
+  illustration: "/Portfolio/PHP/assets/images/realisation2.png"
+  documents:
+    - "/Portfolio/PHP/assets/documents/font-tester-form.php"

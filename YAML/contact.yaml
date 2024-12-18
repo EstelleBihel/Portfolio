@@ -1,0 +1,6 @@
+formulaire:
+  nom: "Nom de l'expéditeur"
+  email: "Adresse courriel"
+  objet: "Objet du message"
+  message: "Contenu du message"
+rgpd: "Vos données ne seront pas conservées."
