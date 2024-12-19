@@ -11,4 +11,4 @@ formations:
     date_fin: "En cours"
     lieu: "Caen"
     contenu: "Alternance avec un focus sur le développement et la gestion des systèmes informatiques."
-    cv: "/portfolio/PHP/assets/documents/CV.odt"
+    cv: "PHP/assets/documents/CV.odt"

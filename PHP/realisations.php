@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="assets/styles/portfolio.css">
+<link rel="stylesheet" href="../assets/styles/portfolio.css">
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/Portfolio/PHP/functions.php";
+require_once realpath(__DIR__ . "/functions.php");
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/YAML/yaml/yaml.php";
-$data = yaml_parse_file($_SERVER['DOCUMENT_ROOT'] . "/Portfolio/YAML/realisations.yaml");
+$data = yaml_parse_file(realpath(__DIR__ . "/../YAML/realisations.yaml"));
 $accueil = $data['realisations'] ?? [];
 ?>
 

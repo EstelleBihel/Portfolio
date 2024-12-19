@@ -1,8 +1,7 @@
-
 <link rel="stylesheet" href="PHP/assets/styles/portfolio.css">
 <?php
-require_once realpath(__DIR__ . "/functions.php");
-$data = yaml_parse_file(realpath(__DIR__ . "/../YAML/accueil.yaml"));
+require_once $_SERVER['DOCUMENT_ROOT'] . "PHP/functions.php";
+$data = yaml_parse_file($_SERVER['DOUMENT_ROOT'] . "../YAML/accueil.yaml");
 $accueil = $data['accueil'] ?? [];
 ?>
 <section id="accueil">

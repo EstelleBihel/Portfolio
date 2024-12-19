@@ -7,14 +7,13 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Inclure PHPMailer
-require $_SERVER['DOCUMENT_ROOT'] . "/Portfolio/lib/PHPMailer/src/Exception.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/Portfolio/lib/PHPMailer/src/PHPMailer.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/Portfolio/lib/PHPMailer/src/SMTP.php";
+require_once realpath(__DIR__ . "/../lib/PHPMailer/src/Exception.php");
+require_once realpath(__DIR__ . "/../lib/PHPMailer/src/PHPMailer.php");
+require_once realpath(__DIR__ . "/../lib/PHPMailer/src/SMTP.php");
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/Portfolio/PHP/functions.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/YAML/yaml/yaml.php";
+require_once realpath(__DIR__ . "/functions.php");
 
-$data = yaml_parse_file($_SERVER['DOCUMENT_ROOT'] . "/Portfolio/YAML/contact.yaml");
+$data = yaml_parse_file(realpath(__DIR__ . "/../YAML/contact.yaml"));
 $error = $success = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

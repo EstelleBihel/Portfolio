@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Estelle Bihel</title>
-    <link rel="stylesheet" href="Portfolio/PHP/assets/styles/portfolio.css">
+    <link rel="stylesheet" href="PHP/assets/styles/portfolio.css">
 </head>
 <body>
     <header>
@@ -20,11 +20,11 @@
         </nav>
     </header>
     <main>
-        <section id="accueil"><?php include "Portfolio/PHP/accueil.php"; ?></section>
-        <section id="competences"><?php include "Portfolio/PHP/competences.php"; ?></section>
-        <section id="realisations"><?php include "Portfolio/PHP/realisations.php"; ?></section>
-        <section id="formation"><?php include "Portfolio/PHP/formation.php"; ?></section>
-        <section id="contact"><?php include "Portfolio/PHP/contact.php"; ?></section>
+        <section id="accueil"><?php include "PHP/accueil.php"; ?></section>
+        <section id="competences"><?php include "PHP/competences.php"; ?></section>
+        <section id="realisations"><?php include "PHP/realisations.php"; ?></section>
+        <section id="formation"><?php include "PHP/formation.php"; ?></section>
+        <section id="contact"><?php include "PHP/contact.php"; ?></section>
     </main>
     <footer>
         <p>Estelle Bihel - 
