@@ -16,6 +16,10 @@ require_once realpath(__DIR__ . "/functions.php");
 $data = yaml_parse_file(realpath(__DIR__ . "/../YAML/contact.yaml"));
 $error = $success = "";
 
+if (!isset($_SESSION['captcha_num1']) || !isset($_SESSION['captcha_num2']))
+    generateCaptcha();
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom = validateFormField($_POST['nom']);
     $email = validateFormField($_POST['email']);
